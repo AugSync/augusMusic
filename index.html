@@ -3,17 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Probando documento</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Hola!, mundo</h1>
+	<nav class="navbar navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="https://github.com/AugustoBarco/augusMusic" target="_blank">Augusto Barco | Web Developer</a>
+		</div>
+	</nav>
+	<div class="container pt-5">
+		<div class="jumbotron">
+		  <h1 class="display-4">Vibrating with music</h1>
+		  <hr class="my-4">		  
+		  <p>Presione el botón para escuchar música mientras tu celular vibra con ella.</p>
+		  <a id="button" class="shadow btn btn-dark btn-block" href="#" role="button">Escuchar</a>
+		</div>
+	</div>
 	<audio id="audio">
-	  <source src="./gunga.ogg" type="audio/ogg">
-	Your browser does not support the audio element.
+		<source src="./gunga.ogg" type="audio/ogg" />
+		Your browser does not support the audio element.
 	</audio>
-	<button id="button">
-		<h1>Presiona para vibrar</h1>
-	</button>
+
 	<script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
