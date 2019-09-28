@@ -11,6 +11,7 @@ window.onload = function(){
 			}else if (gunga.played){
 				window.navigator.vibrate(0)
 				gunga.pause()
+				gunga.load()
 			}
 		}
 	}
